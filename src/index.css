@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-input {
+    @apply border border-gray-400 shadow-md focus:shadow-amber-300 focus:outline-none focus:ring-1 ring-indigo-500;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input:invalid {
+  border-color: red !important;
+}
+
+#mobileMenu {
+  height: 0vh;
+  overflow: hidden;
+  transition: 200ms !important;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+}
+
+.toggleMobileMenu {
+  height: 60vh !important;
+  transition: 200ms !important;
+}
